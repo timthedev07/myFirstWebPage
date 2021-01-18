@@ -1,0 +1,11 @@
+body {
+    background-color: antiquewhite;
+}
+.ccnames {
+    background-color: #77dd11;
+    text-align: center;
+}
+#ptt {
+    font-size: 80px;
+    background: linear-gradient(#2193b0, #6dd5ed);
+}

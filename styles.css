@@ -1,0 +1,237 @@
+@keyframes move {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+h2 {
+    text-align:center;
+    color:darkblue;
+    background:forestgreen;
+    margin:0px;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+}
+#title {
+    text-align:center;
+    padding: 10px;
+    background: linear-gradient(#333,#555);
+    color: skyblue;
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 4px;
+    border-color: aliceblue;
+}
+#subtitle {
+    text-align:center;
+    padding: 10px;
+    background: linear-gradient(#2193b0, #6dd5ed);
+    color: black;
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    border-style: solid;
+    border-radius:5px;
+    border-width: 2px;
+    border-color: blue;
+}
+body {
+    background: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+table {
+    border: solid black 1px;
+    border-collapse: collapse;
+    
+}
+td, th {
+    border: solid black 1px;
+    padding: 10px;
+}
+#goo {
+    color:black;
+}
+
+a {
+    color: blue;
+}
+a[href="https://www.edx.org/"]{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+#edxbutton {
+    font-size: 25px;
+    background-color:orange;
+    color: black;
+    border-radius: 7px;
+}
+#edxbutton:hover{
+    background-color: greenyellow;
+    border-radius: 7px;
+}
+#grid {
+    background-color: antiquewhite;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    grid-template-columns: 100px 100px auto;
+    padding: 5px;
+}
+.grid-item{
+    font-size: 20px;
+    text-align: center;
+    background-color: skyblue;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+.nonStyleButton {
+    background: linear-gradient(to top right, red, orange);
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: solid black 5px;
+    border-radius: 3px;
+    
+  }
+.nonStyleButton:hover{
+    width: 120px;
+    height: 60px;
+    border-width: 4px;
+    font-size: 25px;
+    background: linear-gradient(to top right, red, orange)
+  }
+.currencyBlocks {
+    font: 30px black bold;
+    background: orange;
+}
+sthCurrency {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#edxbutton {
+    position: relative;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100px; 
+        width: 400px; 
+        border: 5px black solid; 
+        padding: 20px;
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+    75% {
+        opacity: 0;
+        height: 100px; 
+        width: 400px; 
+        border: 5px black solid; 
+        padding: 20px;
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+    100% {
+        opacity: 0;
+        height: 0px; 
+        width: 0px; 
+        border: 0px black solid; 
+        padding: 0px;
+        margin-bottom: 0px; 
+        margin-top: 0px;
+    }
+}
+
+
+.natrash {
+    animation-name: hide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.recordDisplay {
+    display: none;
+    opacity: 1;
+}
+#mlINFO {
+    
+    opacity: 1;
+    height: 250px; 
+    width: 400px; 
+    border: 5px black solid; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    background-color: antiquewhite;
+    
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+#fzINFO {
+    
+    opacity: 1;
+    height: 100px; 
+    width: 400px; 
+    border: 5px black solid; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    background-color: antiquewhite;
+    
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}

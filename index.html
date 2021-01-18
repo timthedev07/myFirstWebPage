@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mysterious Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="dropdown.css">
+        <script src="Hello.js">
+
+        </script>
+        <link rel="icon" href="logo.jpg">
+    </head>
+
+    <body>
+
+            <h1 id="title">Mysterious Web page.</h1>
+            <h2 id="subtitle"><a id="subTlink" style="color: black;" href="calculator.html">Check out the calculator, we are still improving it!</a></h2>
+
+
+        <div class="navdd">
+            <button class="ddtrigger">See more</button>
+            <div class="ddlinks">
+                <a href="me.html">Me and CS50</a>
+            </div>
+        </div>
+
+        <div id="search" style="display: block; background: linear-gradient(to bottom right,#56ab2f, #a8e063); margin: 30px; height: 400px; width: 400px; border-radius: 20px; border: dashed gold 5px; position: relative;">
+            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" style="width: 80%; margin-top: 70px; margin-left: 42px;" alt="someimg">
+            <form action="https://www.google.com/search" method="get">
+                <input placeholder="search RIGHT NOW!" name="q" type="search" style="border-radius: 20px; height: 40px; width: 350px; margin-top: 40px; margin-left: 25px; border: black 3px solid;">
+                <br>
+                <input value="search" type="submit" style="border-radius: 10px; height: 60px; width: 250px; margin-top: 35px; margin-left: 75px; border: black 3px solid; font-family: 'Times New Roman', Times, serif; color: black; font-weight: bold; font-size: 30px;">
+            </form>
+        </div>
+        <div>
+            <form id="signinformtag">
+                <div id="typeSignInPassword">
+                    <input type="password" placeholder="Administrator Password" id="signin.p">
+                </div>
+                <input type="submit">
+            </form>
+
+
+        </div>
+
+        <div id="divtasksdiv">
+            <h2>Tasks</h2>
+        <ol id="tasksol">
+            <li>Breakfast
+                <br>
+                Food:
+                <ul id="food">
+                    <li>Jam</li>
+                    <li>Ham</li>
+                    <li>Burger</li>
+                </ul>
+            </li>
+
+            <li>Running</li>
+        </ol>
+        <br>
+        <br>
+        <h3>Add more tasks here</h3>
+        <br>
+        <form id="add">
+            <input id="task" type="text" placeholder="New task">
+            <input id="submittask" type="submit">
+        </form>
+        </div>
+        <div class="natrash" style="background-color: #77dd11; height: 100px; width: 400px; border: 5px black solid; padding: 20px; margin-bottom: 20px; margin-top: 20px;">
+            <p>oejcienvkcjnfdnvnvekfnjnvfkvbfjkfjv fj  ernifvn vrvnijjcpweioewuriouew d vrvjrgvefj</p>
+
+            <button class="remove_natrash">Want to get rid of this annoying thing? Click me!</button>
+        </div>
+        <div>
+            <h2>Check out some links here!</h2>
+        <a href="https://www.microsoft.com/en-us/"><img src="https://c4.wallpaperflare.com/wallpaper/964/196/871/windows10-dark-gradient-minimalism-wallpaper-preview.jpg" alt="windows10 wp" width="500"></a>
+        <br>
+
+        <a href="https://www.google.com/">Google</a><br>
+        <a href="https://www.edx.org/">edX</a><br><br>
+        <button id="stopEdx" class="allButtons">Click here</button><br>
+        <button id="edxbutton" onclick="toLink('https://www.edx.org/')" class="allButtons">Learn HTML and CSS with professional experts</button>
+        </div>
+
+        <h2 id="goo">Here is a table below!</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Playing Style</th>
+                    <th>Nationality</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fan Zhendong</td>
+                    <td>Attack</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Malong</td>
+                    <td>Attack</td>
+                    <td>China</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h2>Here are some countries</h2>
+        <div id="grid">
+            <div class="grid-item">China</div>
+            <div class="grid-item">Spain</div>
+            <div class="grid-item">US</div>
+            <div class="grid-item">UK</div>
+            <div class="grid-item">Germany</div>
+            <div class="grid-item">Austria</div>
+
+        </div>
+
+        <div id="git">
+            <h2>Checkout some git commands here!</h2>
+            <ul>
+                <li>git clone &lt;repository url&gt;-clones the repository folder to your computer.</li>
+                <li>ls-see the files in the repository</li>
+                <li>git add &lt;file name&gt;-adds a file in the repository folder to the repository</li>
+                <li>git push-sync all the local changes you’ve made to github.com</li>
+                <li>git pull- sync all the online github.com changes to your local files.</li>
+                <li>git commit -m “message”  -save your changes to the local repository.</li>
+                <li>git reset --hard &lt;commit&gt;-goes back to the previous versions</li>
+                <li>git branch-see the current branch</li>
+                <li>git checkout -b branch-create and switch to a new branch</li>
+                <li>git checkout branch-switch to an existing branch</li>
+                <li>git merge branch-merge the current branch with another branch</li>
+                <li>git log-shows a list of history versions</li>
+            </ul>
+        </div>
+        <div id="topTT">
+            <h2>Here are some best winning records of the top 2 players, press the button to show each.</h2>
+            <button data-page="mlINFO" class="ttINFObutton">Ma Long</button>
+            <button data-page="fzINFO" class="ttINFObutton">Fan Zhendong</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="mlINFO" class="recordDisplay" style="height: 400px;">
+                <h4>Best records:</h4>
+                <br>
+                    2016 Olympic Men's Singles Champion<br>
+                    Three times WTTC Men's Singles Champion in a row<br>
+                    Five times ITTF World Tour Grand Finals Champion<br>
+                    Two times Chinese National Games Champions in a row<br>
+
+                
+            </div>
+            <div id="fzINFO" class="recordDisplay">
+                <h4>Best records:<br></h4>
+                    Four times Men's World Cup Champion<br>
+                    Three Chinese National Championships Men's Singles titles<br>
+                    2017 WTTC Men's Doubles Champion<br>
+                
+            </div>
+
+        </div>
+        <div id="sparetime">
+            <h2>Spend your spare time here</h2><br>
+
+            <h3>Costumize the display</h3>
+            <button class="nonStyleButton" id="count">+1</button><br><br>
+            <button class="countdisplaychange" data-weight="100" style="background-color: skyblue;">Normal</button><br><br>
+            <button class="countdisplaychange" data-weight="500" style="background-color: red;">Bold</button><br><br>
+            <button class="countdisplaychange" data-weight="900" style="background-color: green;">Extra Bold</button><br><br>
+
+            <select>
+                <option value="black">Black (Default)</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="orange">Orange</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+            </select>
+            <div id="reset">
+                <button id="resetC">
+                    Click here to reset the counter!
+                </button>
+            </div>
+
+            <h1 id="ctbutton" style="color:black; font-size:50px; background-color:antiquewhite;">counter</h1><br><br>
+            <button  class="ai" id="opoo">Want to get rid of this annoying button? Sign in!</button><br><br>
+
+            <h1 id="timerdisplay" style="color:black; font-size:80px; background-color:skyblue; text-align: center;">Timer</h1><br><br>
+            <button id="ploloo">Start Timer</button><br><br>
+        </div>
+
+
+        <div class="av" style="visibility: hidden;">
+
+            <input type="text" value="cd Desktop\TimCoding\SQL_models_migration\sqlite" id="path">
+            <button class="nonStyleButton" id="copyButton">Copy</button>
+            <h3>Here is the path to Microsoft edge's logo!</h3>
+            <h4>%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe</h4>
+            <H3>For Google chrome:</H3>
+            <h4>%ProgramFiles%\Google\Chrome\Application\chrome.exe</h4>
+            <h3>Useful windows 10 shortcuts</h3>
+            <h4>ATTENTION HERE: the windows key is the same as command key on macs</h4>
+            <ul>
+                <li>
+                    <ol>
+
+                        <li>windows + control + d --- creates a new desktop</li>
+                        <li>windows + control + arrowKeys --- switch between desktops</li>
+                        <li>windows + control + F4 --- delete a desktop you no longer need</li>
+                        <li>windows + control + F4 --- delete a desktop you no longer need</li>
+                    </ol>
+
+                </li>
+                <li>
+                    <ol>
+                        <li>windows + m --- minimizes all the windows and shows the desktop</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="currency">
+            <h2>Currency</h2>
+            <h3>Convert one Euro into any currency.</h3>
+            <div id="sthCurrency">
+                <form id="cForm">
+                    <input type="text" placeholder="Currency" id="cInput">
+                    <input type="submit" value="Convert">
+                </form>
+                <div id="currencyResult">
+
+                </div>
+            </div>
+        </div>
+
+
+        <h6><a href="https://www.microsoft.com/">https://www.google.com/</a></h6>
+    </body>
+</html>

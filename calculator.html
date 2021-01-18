@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <script src="calculator.js"></script>
+        <link rel="stylesheet" href="others.css">
+    </head>
+    <body>
+        <h1 id="ptt">Calculators!</h1>
+        <h3><a href="index.html">Back to index</a></h3>
+        <div id="sphereVdiv">
+            <h1 class="ccnames">Sphere Volume Calculator</h1>
+            <form id="sphereVform">
+                <input type="number" placeholder="Radius"  id="sphereVradius" min="0" step=".1">
+                <input type="submit">
+                <br>
+                <img src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/volume-of-a-sphere/sphere.gif" alt="ok">
+            </form>
+            <h2 id="sphereVresult">Result.</h2>
+        </div>
+        <div id="coneV">
+            <h1 class="ccnames">Cone volume calculator</h1>
+
+            <form id="coneVform">
+                <input type="number" placeholder="Radius" id="coneVradius" required>
+                <input type="number" placeholder="Height" id="coneVheight" required>
+
+                <input type="submit">
+            </form>
+            <img src="https://cdn1.byjus.com/wp-content/uploads/2018/11/maths/2016/05/27103931/14.png" width="13" alt="ok">
+            <h2 id="coneVresult">Result.</h2>
+        </div>
+        <div id="multiplication" style="display: block;">
+            <h1 class="ccnames">Multiplication</h1>
+            <select id="factorNumber">
+                <option>None</option>
+                <option id="4FF">4 factors</option>
+                <option id="3FF">3 factors</option>
+                <option id="2FF">2 factors</option>
+
+            </select>
+            <form id="multiplicationform">
+                <input type="number" placeholder="Factor 1"  id="multiplicationF1" style="display: none;" min="0" step=".0000000000001"><br>
+                <input type="number" placeholder="Factor 2"  id="multiplicationF2" style="display: none;" min="0" step=".0000000000001"><br>
+                <input type="number" placeholder="Factor 3"  id="multiplicationF3" style="display: none;" min="0" step=".0000000000001"><br>
+                <input type="number" placeholder="Factor 4"  id="multiplicationF4" style="display: none;" min="0" step=".0000000000001"><br>
+                <input type="submit">
+            </form>
+            <h2 id="multiplicationresult">Result</h2>
+        </div>
+    </body>
+</html>
